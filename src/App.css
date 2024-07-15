@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f1624;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 137px;
+  .list1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 97px;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 97px;
+      li {
+        font-size: 30px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .list2 {
+    padding: 0 91px 0 0;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 29px;
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.TitleContentMain {
+  margin-top: 157px;
+  h1 {
+    margin: 0 0 34px 192px;
+    font-size: 64px;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0 0 73px 254px;
+    font-size: 36px;
+    width: 989px;
+    font-weight: 600;
+    color: #bcbcbc;
+  }
+
+  button {
+    width: 280px;
+    height: 80px;
+    background: linear-gradient(90deg, #945dd6 0%, #6978d1 67%, #13adc7 100%);
+    border-radius: 83px;
+    margin-left: 301px;
+  }
+}
+
+.projectsContentMain {
+  margin: 157px 0 0 0;
+  .titleProjects {
+    margin: 0 0 0 192px;
+    font-size: 64px;
+    font-weight: 600;
+  }
+
+  .cards {
+    margin: 93px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 97px 220px;
+    .cardsContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 550px;
+      height: 700px;
+      border-radius: 50px 0 50px 0;
+      filter: drop-shadow(0px 0px 12px white);
+      h1 {
+        margin-top: 25px;
+      }
+      p {
+        margin-top: 54px;
+        font-size: 28px;
+        font-weight: 600;
+        width: 500px;
+      }
+      img {
+        margin-top: 25px;
+        width: 500px;
+        height: 266px;
+      }
+      .link {
+        width: 100%;
+        border-radius: 30px;
+      }
+      a {
+        margin-left: 25px;
+        button {
+          cursor: pointer;
+          margin-top: 25px;
+          width: 200px;
+          height: 60px;
+          border-radius: 83px;
+          background: linear-gradient(
+            90deg,
+            #945dd6 0%,
+            #6978d1 67%,
+            #13adc7 100%
+          );
+        }
+      }
+    }
+  }
+}
+
+.aboutContentMain {
+  margin: 128px 0 128px 0;
+  h1 {
+    margin:0 0 87px 192px;
+    font-size: 64px;
+    font-weight: 600;
+  }
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemTimeline {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens */
+  gap: 32px;
+  position: relative;
+  span {
+    font-size: 36px;
+    font-weight: 600;
+    position: relative;
+  }
+  p {
+    width: 347px;
+    height: 252px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+
+.itemTimeline > span::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute; /* Altera para absolute */
+  top: calc(100%); /* Ajusta a posição abaixo do span */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Certifique-se de que o círculo esteja acima da linha */
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 21%; /* Centraliza verticalmente */
+  left: 51%; /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta para o centro exato */
+  width: 1150px; /* Ajuste conforme necessário */
+  height: 12px; /* Altura da linha */
+  background-color: white;
+  z-index: 1; /* Certifique-se de que a linha esteja atrás dos círculos */
+}
+
+.contatoContent {
+  display: flex;
+  align-items: center;
+  margin-bottom: 140px;
+  gap: 200px;
+  .displayFlexContato {
+    margin:0 0 0 200px;
+    display: flex;
+    gap: 114px;
+    .textContato {
+      p {
+        font-size: 42px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .redesSociais {
+    display: flex;
+    gap: 65px;
+  }
+}
+
